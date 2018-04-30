@@ -1,0 +1,45 @@
+swagger: "2.0"
+info:
+  description: |
+    This is a demo for swagger codegen and spring boot application.
+  version: "1.0.0"
+  title: Swagger Spring Boot
+host: swaggerspringboot.girisb.com
+basePath: /swaggerspringboot
+schemes:
+  - http
+paths:
+  /hello:
+    post:
+      summary: Hello service.
+      operationId: hello
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          description: Credentials
+          required: true
+          schema:
+            $ref: '#/definitions/HelloRequest'
+      responses:
+        "200":
+          description: Successful operation
+          schema:
+            $ref: "#/definitions/HelloResponse"
+
+definitions:
+  HelloRequest:
+    type: object
+    properties:
+      username:
+        type: string
+        description: name for the user
+
+  HelloResponse:
+    type: object
+    properties:
+      message:
+        type: string
+        description: Hello messsage
