@@ -17,8 +17,7 @@ public class HelloController implements HelloApi {
         HelloResponse helloResponse = new HelloResponse();
         System.out.println(helloRequest.getUsername());
         helloResponse.setMessage("Hello, " + helloRequest.getUsername() + "!");
-        ResponseEntity<HelloResponse> response = new ResponseEntity<HelloResponse>(helloResponse, HttpStatus.OK);
-        return response;
+        return ResponseEntity.status(HttpStatus.OK).body(helloResponse);
     }
 
 }

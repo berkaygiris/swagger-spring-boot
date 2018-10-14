@@ -19,6 +19,7 @@ paths:
         - application/json
       parameters:
         - in: body
+          name: helloRequest
           description: Credentials
           required: true
           schema:

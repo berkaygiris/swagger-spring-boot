@@ -23,8 +23,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<swaggerSpec>src/main/resources/swagger/definition.yaml</swaggerSpec>
-		<io.springfox.version>2.8.0</io.springfox.version>
-		<io.swagger.version>1.5.18</io.swagger.version>
+		<io.springfox.version>2.9.2</io.springfox.version>
+		<io.swagger.version>1.5.21</io.swagger.version>
 		<swagger-codegen-maven-plugin.version>2.3.1</swagger-codegen-maven-plugin.version>
 		<javax.xml.bind.version>2.2.12</javax.xml.bind.version>
 		<cxf.version>3.2.4</cxf.version>
