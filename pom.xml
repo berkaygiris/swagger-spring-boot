@@ -26,10 +26,6 @@
 		<io.springfox.version>2.9.2</io.springfox.version>
 		<io.swagger.version>1.5.21</io.swagger.version>
 		<swagger-codegen-maven-plugin.version>2.3.1</swagger-codegen-maven-plugin.version>
-		<javax.xml.bind.version>2.2.12</javax.xml.bind.version>
-		<cxf.version>3.2.4</cxf.version>
-		<org.modelmapper.version>1.1.3</org.modelmapper.version>
-		<mockito-core.version>2.18.0</mockito-core.version>
 	</properties>
 
 	<dependencies>
@@ -42,17 +38,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>${javax.xml.bind.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jsr310</artifactId>
 		</dependency>
 
 		<dependency>
